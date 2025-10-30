@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+from PIL import Image
+import numpy as np
+
+# Open an image and convert to NumPy array
+img = Image.open("input.jpg")
+img_array = np.array(img)
+
+# Display the image
+plt.imshow(img_array)
+plt.axis('off') # Hide axes
+plt.show()

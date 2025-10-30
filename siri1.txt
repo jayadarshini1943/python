@@ -1,0 +1,16 @@
+from PIL import Image
+
+# Open an image
+img = Image.open("input.jpg")
+
+# Get image size
+width, height = img.size
+
+# Resize the image
+resized_img = img.resize((200, 150))
+
+# Convert to grayscale
+grayscale_img = img.convert("L")
+
+# Save the image
+resized_img.save("resized_image.jpg")
